@@ -1,6 +1,12 @@
 {
-  "name": "randomPicture",
-  "version": "0.01",
+  "name": "random_picture",
+  "version": "1.0.0",
+  "description": "简单的nodejs随机图片服务器",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "yige233",
   "license": "MIT"
 }
