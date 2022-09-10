@@ -61,8 +61,26 @@ Connection: close
 | allowedPicExt  | [".jpg", ".jpeg", ".png"] | 只检测拥有这个列表里的格式的文件。理论上讲也可以添加其他非图片的格式，不过这还需要稍微修改一下代码，以便于程序能够正确输出它的MimeType |
 | dir  | ["./pics"] | 这项决定了程序将从哪里寻找图片。默认只寻找程序同目录下名为`pics`的文件夹。由于它是一个数组，所以可以添加多个不相干的文件夹。不存在的文件夹路径会自动新建。 |
 
-### 部署
+### 部署（小白向）
 
-首先得有nodejs环境。
-在index.js所在的目录下执行`node index`命令，如果终端给出了api的url链接（一般是[http://localhost:3000/](http://localhost:3000/)），就说明api已经启动成功。为了使api能够输出图片，还需要向刚刚程序生成的`pics`文件夹中放入一些图片。
-以上是默认情况，如果有修改config.json，情况可能会有所不同。
+1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v1.0)，下载`randomPicForWindows.zip`
+2. 解压压缩包，找到`双击启动.cmd`，运行它。
+3. 如果命令行黑框中给出了api的url链接（一般是[http://localhost:3000/](http://localhost:3000)），就说明api已经启动成功。
+4. 为了使api能够输出图片，还需要向刚刚程序生成的`pics`文件夹中放入一些图片。
+
+#### 一些说明
+以上是默认情况，如果有修改config.json，情况可能会有所不同，比如程序试图使用的端口已经被占用、修改了程序使用的文件夹。
+
+Q:黑框太丑，怎么办？
+
+A:可以把它做成服务，随电脑启动而启动，且在后台持续运行，没有黑框。
+
+1. 从[这里](https://nssm.cc/ci/nssm-2.24-101-g897c7ad.zip)下载nssm。
+2. 解压，并从`win64`文件夹下找到`nssm.exe`，并把它复制到本程序所在的文件夹里。
+3. 在本程序所在的文件夹下面新建一个文本文档，内容为`nssm install randomPic`，保存，并将其文件名修改为`nssm.cmd`。
+4. 双击`nssm.cmd`。如果出现请求权限的框，请点击确定；如果是编辑文本的框，请移步[这里](https://zhuanlan.zhihu.com/p/78950489)，然后举一反三，重新进行第三步。
+5. 如图所示，![nssm](https://user-images.githubusercontent.com/34409561/189483858-f61d6b75-a694-41f2-8351-598133faa612.png)
+点击箭头“1”所指向的按钮，在出现的选择框中找到`node_app.exe`;在箭头“2”所指向的框中填入`index`;点击箭头“3”所指向的按钮，完成安装。
+6. 仿照第三步的步骤，新建一个内容为`net start randomPicc`的.cmd文件，右键他，选择“以管理员身份运行”。
+7. 访问api的网址，如果能够成功访问，则说明服务已经在后台运行了。
+
