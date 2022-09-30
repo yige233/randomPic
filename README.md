@@ -2,7 +2,7 @@
 
 ### 如何使用？
 
-1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v1.0)，下载`randomPicForWindows.zip`
+1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v1.1)，下载`randomPicForWindows.zip`
 2. 解压压缩包，找到`双击启动.cmd`，运行它。
 3. 如果命令行黑框中给出了api的url链接（一般是[http://localhost:3000/](http://localhost:3000)），就说明api已经启动成功。
 4. 为了使api能够输出图片，还需要向刚刚程序生成的`pics`文件夹中放入一些图片。
