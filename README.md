@@ -13,7 +13,7 @@ Q:黑框太丑，怎么办？
 
 A:可以把它做成服务，随电脑启动而启动，且在后台持续运行，没有黑框。
 
-1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v1.0)，下载`randomPicForWindows.zip`
+1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v1.1)，下载`randomPicForWindows.zip`
 2. 解压压缩包，找到`安装服务.cmd`，使用管理员身份运行它。
 3. 完成！
 4. 如果需要卸载服务，那么找到`卸载服务.cmd`，使用管理员身份运行它。
