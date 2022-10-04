@@ -1,4 +1,4 @@
-## randomPic| 简单的api，用于随机输出图片
+## randomPic | 简单的api，用于随机输出图片
 
 ### 如何使用？
 
