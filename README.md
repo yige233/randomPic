@@ -1,5 +1,7 @@
 ## randomPic | 简单的api，用于随机输出图片
 
+### 已迁移到[randomPicv2](https://github.com/yige233/randomPicv2)
+
 ### 如何使用？
 
 1. 前往[Releases](https://github.com/yige233/randomPic/releases/tag/v1.1)，下载`randomPicForWindows.zip`
